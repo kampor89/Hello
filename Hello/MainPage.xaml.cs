@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 //Szablon elementu Pusta strona jest udokumentowany na stronie https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x415
 
@@ -25,6 +26,12 @@ namespace Hello
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void okClick(object sender, RoutedEventArgs e)
+        {
+            MessageDialog msg = new MessageDialog("Hello " + userName.Text);
+            msg.ShowAsync();
         }
     }
 }

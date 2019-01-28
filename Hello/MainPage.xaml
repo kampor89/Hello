@@ -11,7 +11,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Text="Proszę podać swoje imię" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
         <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="10,47,0,0" Text="TextBox" VerticalAlignment="Top" Height="36" Width="260"/>
-        <Button x:Name="OK" Content="OK" HorizontalAlignment="Left" Margin="278,47,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.613,2.406" Height="36" Width="72"/>
+        <Button x:Name="OK" Content="OK" HorizontalAlignment="Left" Margin="278,47,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.613,2.406" Height="36" Width="72" Click="okClick"/>
 
     </Grid>
 </Page>
